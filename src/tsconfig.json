@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "outDir": "./dist",
+      "rootDir": "../src",
+      "strict": true,
+      "esModuleInterop": true,
+      "moduleResolution": "Node",
+      "skipLibCheck": true,
+      "allowJs": true,                         // Allow JavaScript files in the compilation
+      "resolveJsonModule": true,               // Allow JSON imports
+      "incremental": true                      // Improve incremental compilation speed
+  
+    },
+    }
+  
