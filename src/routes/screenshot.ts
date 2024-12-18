@@ -18,7 +18,13 @@ const screenshotRoute: FastifyPluginAsync = async (fastify) => {
       console.log('Launching browser...');
       const browser = await puppeteer.launch({
         executablePath: '/usr/bin/chromium-browser', 
-        args: ['--no-sandbox', '--disable-setuid-sandbox'], 
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-accelerated-2d-canvas',
+          '--disable-gpu',
+        ]
       });
 
       
